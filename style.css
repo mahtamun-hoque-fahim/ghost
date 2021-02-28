@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    outline: none;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    text-align: center;
+}
+#ball{
+  display: inline-block;
+  position: sticky;
+  top: 50%;
+  background-color: rgb(36, 36, 36);
+  box-shadow: 0px 0px 50px 10px lightgray;
+  height: 10px 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  color: white;
+}
+@keyframes ballmove {
+    0%{
+        top: 50%;
+    }
+    50%{
+        top: 53%;
+    }
+    100%{
+        top: 50%;
+    }
+
+}
+#ball{
+    animation: ballmove 2.5s infinite;
+}
+
